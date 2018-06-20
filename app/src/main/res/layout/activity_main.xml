@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textview_one"
+        android:id="@+id/boxOneText"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textview_two"
+        android:id="@+id/boxTwoText"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -29,14 +29,14 @@
         android:layout_marginTop="@dimen/margin_wide"
         android:layout_marginBottom="8dp"
         android:text="@string/box_two"
-        app:layout_constraintBottom_toTopOf="@+id/label"
+        app:layout_constraintBottom_toTopOf="@+id/labelText"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_one"
+        app:layout_constraintTop_toBottomOf="@+id/boxOneText"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textview_three"
+        android:id="@+id/boxThreeText"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -44,15 +44,15 @@
         android:layout_marginTop="@dimen/margin_half"
         android:layout_marginEnd="@dimen/margin_wide"
         android:text="@string/box_three"
-        app:layout_constraintBottom_toTopOf="@+id/textview_four"
+        app:layout_constraintBottom_toTopOf="@+id/boxFourText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textview_two"
-        app:layout_constraintTop_toTopOf="@+id/textview_two"
+        app:layout_constraintStart_toEndOf="@+id/boxTwoText"
+        app:layout_constraintTop_toTopOf="@+id/boxTwoText"
         app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
-        android:id="@+id/textview_four"
+        android:id="@+id/boxFourText"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -61,14 +61,14 @@
         android:layout_marginEnd="@dimen/margin_wide"
         android:onClick="makeColored"
         android:text="@string/box_four"
-        app:layout_constraintBottom_toTopOf="@+id/textview_five"
+        app:layout_constraintBottom_toTopOf="@+id/boxFiveText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textview_two"
-        app:layout_constraintTop_toBottomOf="@+id/textview_three" />
+        app:layout_constraintStart_toEndOf="@+id/boxTwoText"
+        app:layout_constraintTop_toBottomOf="@+id/boxThreeText" />
 
     <TextView
-        android:id="@+id/textview_five"
+        android:id="@+id/boxFiveText"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -76,24 +76,24 @@
         android:layout_marginTop="@dimen/margin_wide"
         android:layout_marginEnd="@dimen/margin_wide"
         android:text="@string/box_five"
-        app:layout_constraintBottom_toBottomOf="@+id/textview_two"
+        app:layout_constraintBottom_toBottomOf="@+id/boxTwoText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textview_two"
-        app:layout_constraintTop_toBottomOf="@+id/textview_four" />
+        app:layout_constraintStart_toEndOf="@+id/boxTwoText"
+        app:layout_constraintTop_toBottomOf="@+id/boxFourText" />
 
     <TextView
-        android:id="@+id/label"
+        android:id="@+id/labelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_wide"
         android:text="@string/how_to_play"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        app:layout_constraintBaseline_toBaselineOf="@+id/info"
+        app:layout_constraintBaseline_toBaselineOf="@+id/infoText"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/info"
+        android:id="@+id/infoText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_wide"
@@ -104,43 +104,43 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_two"
+        app:layout_constraintStart_toEndOf="@+id/labelText"
+        app:layout_constraintTop_toBottomOf="@+id/boxTwoText"
         app:layout_constraintVertical_bias="0.407" />
 
     <Button
-        android:id="@+id/button_one"
+        android:id="@+id/redButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_red"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_three"
-        app:layout_constraintEnd_toStartOf="@+id/button_three"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellowButton"
+        app:layout_constraintEnd_toStartOf="@+id/yellowButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_two"
+        android:id="@+id/greenButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_green"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_three"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellowButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_three" />
+        app:layout_constraintStart_toEndOf="@+id/yellowButton" />
 
     <Button
-        android:id="@+id/button_three"
+        android:id="@+id/yellowButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_half"
         android:layout_marginBottom="@dimen/margin_wide"
         android:text="@string/button_yellow"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_two"
+        app:layout_constraintEnd_toStartOf="@+id/greenButton"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_one"
-        app:layout_constraintTop_toBottomOf="@+id/label"
+        app:layout_constraintStart_toEndOf="@+id/redButton"
+        app:layout_constraintTop_toBottomOf="@+id/labelText"
         app:layout_constraintVertical_bias="0.914" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.colorviewtest
+package com.example.android.colormyviews
 
 import android.graphics.Color
 import android.os.Bundle
@@ -12,28 +12,28 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textview_one.setOnClickListener {
+        boxOneText.setOnClickListener {
             makeColored(it)
         }
-        textview_two.setOnClickListener {
+        boxTwoText.setOnClickListener {
             makeColored(it)
         }
-        textview_three.setOnClickListener {
+        boxThreeText.setOnClickListener {
             makeColored(it)
         }
-        textview_four.setOnClickListener {
+        boxFourText.setOnClickListener {
             makeColored(it)
         }
-        textview_five.setOnClickListener {
+        boxFiveText.setOnClickListener {
             makeColored(it)
         }
-        button_one.setOnClickListener {
+        redButton.setOnClickListener {
             makeColored(it)
         }
-        button_two.setOnClickListener {
+        greenButton.setOnClickListener {
             makeColored(it)
         }
-        button_three.setOnClickListener {
+        yellowButton.setOnClickListener {
             makeColored(it)
         }
     }
@@ -51,18 +51,18 @@ class MainActivity : AppCompatActivity() {
         when (view.id) {
 
         // Boxes using Color class colors for background
-            R.id.textview_one -> view.setBackgroundColor(Color.BLUE)
-            R.id.textview_two -> view.setBackgroundColor(Color.GRAY)
+            R.id.boxOneText -> view.setBackgroundColor(Color.BLUE)
+            R.id.boxTwoText -> view.setBackgroundColor(Color.GRAY)
 
         // Boxes using Android color resources for background
-            R.id.textview_three -> view.setBackgroundResource(android.R.color.holo_green_light)
-            R.id.textview_four -> view.setBackgroundResource(android.R.color.holo_green_dark)
-            R.id.textview_five -> view.setBackgroundResource(android.R.color.holo_orange_light)
+            R.id.boxThreeText -> view.setBackgroundResource(android.R.color.holo_green_light)
+            R.id.boxFourText -> view.setBackgroundResource(android.R.color.holo_green_dark)
+            R.id.boxFiveText -> view.setBackgroundResource(android.R.color.holo_orange_light)
 
         // Buttons using custom colors for background
-            R.id.button_one -> textview_three.setBackgroundResource(R.color.myRed)
-            R.id.button_three -> textview_four.setBackgroundResource(R.color.myYellow)
-            R.id.button_two -> textview_five.setBackgroundResource(R.color.myGreen)
+            R.id.redButton -> boxThreeText.setBackgroundResource(R.color.colorMyRed)
+            R.id.yellowButton -> boxFourText.setBackgroundResource(R.color.colorMyYellow)
+            R.id.greenButton -> boxFiveText.setBackgroundResource(R.color.colorMyGreen)
 
             else -> view.setBackgroundColor(Color.DKGRAY)
         }
