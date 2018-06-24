@@ -12,28 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        boxOneText.setOnClickListener {
-            makeColored(it)
+        for (child in 0 until parentConstraintLayout.childCount) {
+            addOnClickListener(parentConstraintLayout.getChildAt(child))
         }
-        boxTwoText.setOnClickListener {
-            makeColored(it)
-        }
-        boxThreeText.setOnClickListener {
-            makeColored(it)
-        }
-        boxFourText.setOnClickListener {
-            makeColored(it)
-        }
-        boxFiveText.setOnClickListener {
-            makeColored(it)
-        }
-        redButton.setOnClickListener {
-            makeColored(it)
-        }
-        greenButton.setOnClickListener {
-            makeColored(it)
-        }
-        yellowButton.setOnClickListener {
+    }
+
+    /**
+     * Adds onClickListener to each view in layout hierarchy
+     */
+    fun addOnClickListener(view: View) {
+        view.setOnClickListener {
             makeColored(it)
         }
     }
