@@ -20,6 +20,7 @@ limitations under the License. -->
     </style>
 
     <style name="whiteBox">
+        <!-- TODO (04) Update the background color to white. -->
         <item name="android:background">@android:color/holo_green_light</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">@dimen/box_text_size</item>

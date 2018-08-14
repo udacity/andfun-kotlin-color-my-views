@@ -30,4 +30,8 @@ limitations under the License. -->
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- TODO (01) Add a TextView "Box Two" below "Box One" and align to the left of the layout. -->
+
+    <!-- TODO (02) Add a vertical, aligned chain of identical boxes Box Three, Box Four, and Box Five. -->
+
 </android.support.constraint.ConstraintLayout>
