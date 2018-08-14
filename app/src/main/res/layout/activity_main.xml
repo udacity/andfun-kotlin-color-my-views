@@ -86,8 +86,73 @@ limitations under the License. -->
         app:layout_constraintStart_toEndOf="@+id/box_two_text"
         app:layout_constraintTop_toBottomOf="@+id/box_four_text" />
 
-    <!-- TODO (01) Add two TextViews with different font sizes and align them using a Baseline Constraint. -->
+    <TextView
+        android:id="@+id/label_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:fontFamily="@font/roboto"
+        android:text="@string/how_to_play"
+        android:textSize="@dimen/box_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/info_text"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- TODO (02) Add a chain of three buttons constrained to the bottom of the layout. -->
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginTop="@dimen/margin_half"
+        android:layout_marginBottom="@dimen/margin_half"
+        android:layout_marginEnd="@dimen/margin_wide"
+        android:fontFamily="@font/roboto"
+        android:text="@string/tap_the_boxes_and_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/label_text"
+        app:layout_constraintTop_toBottomOf="@+id/box_two_text"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/red_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/button_red"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
+        app:layout_constraintEnd_toStartOf="@+id/yellow_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/yellow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_half"
+        android:layout_marginBottom="@dimen/margin_wide"
+        android:fontFamily="@font/roboto"
+        android:text="@string/button_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/green_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/red_button"
+        app:layout_constraintTop_toBottomOf="@+id/label_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/green_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/button_green"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellow_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yellow_button" />
+
+
 
 </android.support.constraint.ConstraintLayout>
