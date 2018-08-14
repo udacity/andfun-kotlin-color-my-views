@@ -86,4 +86,8 @@ limitations under the License. -->
         app:layout_constraintStart_toEndOf="@+id/box_two_text"
         app:layout_constraintTop_toBottomOf="@+id/box_four_text" />
 
+    <!-- TODO (01) Add two TextViews with different font sizes and align them using a Baseline Constraint. -->
+
+    <!-- TODO (02) Add a chain of three buttons constrained to the bottom of the layout. -->
+
 </android.support.constraint.ConstraintLayout>
