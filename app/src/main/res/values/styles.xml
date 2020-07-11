@@ -19,4 +19,13 @@ limitations under the License. -->
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="whiteBox">
+        <item name="android:background">@android:color/holo_green_light</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/box_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
 </resources>
